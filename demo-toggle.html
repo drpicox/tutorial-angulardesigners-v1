@@ -1,0 +1,15 @@
+<h3>Demo of a toggle</h3>
+<div ng-controller="Toggle as burger">
+	<div ng-click="burger.toggle()">
+		Show/Hide
+	</div>
+	<div ng-show="burger.is()">
+		This is the content <br>
+		of the toggle.
+	</div>
+
+	<div ng-click="burger.hide()">
+		Close toggle.
+	</div>
+
+</div>

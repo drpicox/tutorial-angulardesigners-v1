@@ -1,0 +1,25 @@
+<h2>Content</h2>
+
+<p>
+	This is a demo of a content.
+	It consist in a list of objects that comes from the controller.
+	Data and controller is defined in controllers.js
+</p>
+
+
+<div ng-controller="UsersController as usersCtrl">
+	<p>Example of the list with ng-repeat.</p>
+	<ul>
+		<li ng-repeat="user in usersCtrl.list">
+			Name: {{user.name}},
+			Email: {{user.email}},
+			Age: {{user.age}}
+		</li>
+	</ul>
+	<p>Example of a form with ng-model, more examples at <a href="http://angularjs.org">https://angularjs.org/</a>.</p>
+	<form>
+		Name: <input type="text" ng-model="usersCtrl.current.name"><br>
+		Email: <input type="email" ng-model="usersCtrl.current.email"><br>
+		Age: <input type="number" ng-model="usersCtrl.current.age"><br>
+	</form>
+</div>

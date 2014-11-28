@@ -1,0 +1,27 @@
+<h2>How to run</h2>
+
+<h3>Option 1: web server</h3>
+You can put it in your web server, like any static web page. <br>
+It does not works directly from disc because the browser forbids to read .html files.
+
+<h3>Option 2: node simple web server</h3>
+<ol>
+	<li>Install node js: <a href="http://nodejs.org/">http://nodejs.org/</a></li>
+	<li>Install http-server (run from command line):<br>
+Windows:<br>
+<pre>
+	C:\> npm install -g http-server
+</pre>
+Mac/Linux:<br>
+<pre>
+	$ sudo npm install -g http-server
+</pre>
+	</li>
+	<li>Run web server from your folder (run from command line):<br>
+<pre>
+	$ cd your/folder/DesignerHowToAngular
+	$ http-server -c-1 .
+</pre>
+	</li>
+</ol>
+Now you will have a very useful server that avoids any browser cache problems.

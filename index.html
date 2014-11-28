@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini tutorial of Angular for designer.</title>
+	<style>
+		/* just to make clear where to click, or what are you seeing */
+		[ng-click] {
+			font-weight: bold;
+			text-decoration: underline;
+			color: blue;
+		}
+		[ng-show] {
+			margin: 5px;
+			background: yellow;
+		}
+		h2 {
+			margin-top: 30px;
+		}
+		h3 {
+			margin-bottom: 3px;
+		}
+	</style>
+</head>
+<body ng-app>
+
+	<ng-include src="'header.html'"></ng-include>
+	<ng-include src="'content.html'"></ng-include>
+	<hr>
+	<ng-include src="'demos.html'"></ng-include>
+	<hr>
+	<ng-include src="'howtorun.html'"></ng-include>
+
+	<div>
+		<hr><br><br>
+		Note:<br>
+		* It is important to add ng-app to the &lt;body> tag.<br>
+		* Remember to add extra quotes in ng-include src -> "'some.html'".<br>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.js"></script>
+	<script src="utils.js"></script>
+	<script src="controllers.js"></script>
+	
+</body>
+</html>
