@@ -6,7 +6,7 @@ function Toggle() {
 	this.toggle = function () {
 		this.active = !this.active;
 	};
-	this.is = function() {
+	this.isVisible = function() {
 		return this.active;
 	};
 	this.show = function() {
